@@ -14,7 +14,8 @@ document.getElementById('title').onclick = function() {
     list.unshift(temp);
     console.log(list);
   }
-  output = list[0][1] / list[0][0];
+ 
+  output = (list[0][1] / list[0][0])+'='+list[0][1]+'/'+list[0][0];
   document.getElementById('output').textContent = output;
   list = [[1, 2]];
   for (i = 1; i <= parseInt(it); i++) {
@@ -25,6 +26,6 @@ document.getElementById('title').onclick = function() {
     list.unshift(temp);
     console.log(list);
   }
-  output = list[0][1] / list[0][0];
+  output = (list[0][1] / list[0][0])+'='+2*list[0][1]+'/'+2*list[0][0];
   document.getElementById('output1').textContent = output;
     }
